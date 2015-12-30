@@ -42,10 +42,10 @@ $response = WealthEngine::by_phone([
 ]);
 ```
 
-Note that each API call includes an ``apikey`` and ``is_full`` value in the payload.  The full lookup includes more information, but costs more per query.
+Note that each API call includes an ``apikey`` value in the payload, which is required.
 
-You can also add a ``is_sandbox`` argument, if you want to use the testing API endpoint.
+You can also add a ``is_full`` argument for the more expensive full profile lookups, and you can add a ``is_sandbox`` argument if you want to use the testing API endpoint.
 
 It is probably a good idea to cache these API responses, using whatever method you prefer, to reduce duplicate charges for queries you've already run in the past.
 
-For more information, see the (documentation)[https://dev.wealthengine.com/documentation].
+For more information, see the [documentation](https://dev.wealthengine.com/documentation).
