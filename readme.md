@@ -14,7 +14,6 @@ use Travis\WealthEngine;
 // find by address
 $response = WealthEngine::by_address([
 	'apikey' => '12345',
-	'is_full' => false,
 	'last_name' => 'Tarsus',
 	'first_name' => 'Saul',
 	'address_line1' => '777 Pearly Gates', // only the first line of the address, no suites
@@ -26,7 +25,6 @@ $response = WealthEngine::by_address([
 // find by email
 $response = WealthEngine::by_email([
 	'apikey' => '12345',
-	'is_full' => false,
 	'email' => 'paul@damascus.net',
 	'last_name' => 'Tarsus', // optional
 	'first_name' => 'Saul', // optional
@@ -35,7 +33,6 @@ $response = WealthEngine::by_email([
 // find by phone
 $response = WealthEngine::by_phone([
 	'apikey' => '12345',
-	'is_full' => false,
 	'phone' => '7777777777', // numbers only
 	'last_name' => 'Tarsus', // optional
 	'first_name' => 'Saul', // optional
